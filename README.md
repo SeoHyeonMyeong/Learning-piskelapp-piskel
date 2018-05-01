@@ -1,1 +1,4 @@
-# Learning-piskelapp-piskel
+piskel
+======
+
+Animated sprite editor
