@@ -1,7 +1,7 @@
-html, body {
-  height : 100%;
-  margin : 0;
-  cursor : default;
+html, body {        // 인덱스 창에서 html
+  height : 100%;    // 높이 100%
+  margin : 0;   
+  cursor : default; 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -10,53 +10,53 @@ html, body {
   user-select: none;
 }
 
-ul, li {
+ul, li {    //리스트의 경우 마진 0 패딩 0
   margin : 0;
   padding : 0;
 }
 
-.debug {
+.debug {      // 디버그 경계선 1px, 검은색
   border : 1px Solid black;
 }
 
-.left-nav {
-  position:absolute;
-  top : 0;
+.left-nav {   // 왼쪽 메뉴
+  position:absolute;    // 절대위치
+  top : 0;              //높이 100%
   bottom : 0;
-  width : 200px;
-  background : #000;
-  padding : 10px;
+  width : 200px;        //왼쪽부터 200
+  background : #000;    //배경 검은색
+  padding : 10px;     //패딩 상하좌우 10
 }
 
-.main-panel {
-  position:absolute;
-  top : 0;
+.main-panel {       //메인 패널
+  position:absolute;    //절대위치
+  top : 0;            //높이 100%
   bottom : 0;
-  left : 200px;
+  left : 200px;       //왼쪽 200 제외 전부
   right : 0;
-  background : #ccc;
+  background : #ccc;  // 배경 회색
 }
 
-.preview-container {
-  position : absolute;
-  top : 30px;
-  right : 0;
-  height : 256px;
-  width : 256px;
-  background : white;
-  border : 0px Solid black;
-  border-radius:5px 0px 0px 5px;
-  box-shadow : 0px 0px 2px rgba(0,0,0,0.2);
+.preview-container {    //미리보기 컨테이너
+  position : absolute;    //절대위치
+  top : 30px;             //위에서 30
+  right : 0;              //오른쪽정렬
+  height : 256px;       //높이 256
+  width : 256px;        //넓이 256
+  background : white;     //배경 흰색
+  border : 0px Solid black;   //경계선 x
+  border-radius:5px 0px 0px 5px;  //둥근모서리 
+  box-shadow : 0px 0px 2px rgba(0,0,0,0.2); //경계 그림자
 }
 
-.preview-container canvas{
-  border : 0px Solid transparent;
-  border-radius:5px 0px 0px 5px;
+.preview-container canvas{    //미리보기 캔버스
+  border : 0px Solid transparent;   //경계 투명
+  border-radius:5px 0px 0px 5px;    //둥근모서리
 }
 
-#cursorInfo {
-  position : fixed;
-  cursor : default;
+#cursorInfo {       //커서 정보 
+  position : fixed;   //위치 항상 고정
+  cursor : default;   //커서 기본
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -65,19 +65,19 @@ ul, li {
   user-select: none;
 }
 
-.action-button {
-  background-color : white;
-  width : 150px;
-  display : inline-block;
+.action-button {    //액션버튼 
+  background-color : white;   //배경 흰색
+  width : 150px;              //넓이 150
+  display : inline-block;     //인라인 블럭
 }
 
-#preview-list li{
-  margin : 10px 0;
-  width : 128px;
-  height : 128px;
+#preview-list li{     //프리뷰 리스트
+  margin : 10px 0;    //마진 상하 10
+  width : 128px;      //넓이 128  
+  height : 128px;     //높이 128
 }
 
-#preview-list li.selected{
-  margin : 8px -2px;
-  border : 2px Solid red;
+#preview-list li.selected{    //프리뷰 선택된 리스트
+  margin : 8px -2px;          //마진 상하 8 좌우 -2
+  border : 2px Solid red;     //경계 빨강 2px
 }
